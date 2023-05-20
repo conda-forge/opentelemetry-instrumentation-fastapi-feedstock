@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-fastapi" %}
-{% set version = "0.38b0" %}
+{% set version = "0.39b0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_fastapi-{{ version }}.tar.gz
-  sha256: 8946fd414084b305ad67556a1907e2d4a497924d023effc5ea3b4b1b0c55b256
+  sha256: 02d4d583a0a62efc9a94d489f1a736ca2905fb6f7d445ac686608de51d7e375b
 
 build:
   noarch: python
@@ -22,10 +22,10 @@ requirements:
   run:
     - python >=3.7
     - opentelemetry-api ~=1.12
-    - opentelemetry-instrumentation-asgi ==0.38b0
-    - opentelemetry-instrumentation ==0.38b0
-    - opentelemetry-semantic-conventions ==0.38b0
-    - opentelemetry-util-http ==0.38b0
+    - opentelemetry-instrumentation-asgi ==0.39b0
+    - opentelemetry-instrumentation ==0.39b0
+    - opentelemetry-semantic-conventions ==0.39b0
+    - opentelemetry-util-http ==0.39b0
     # - requests ~=2.23
     # - opentelemetry-test-utils ==0.37b0
     # - opentelemetry-instrumentation-fastapi 
@@ -33,6 +33,11 @@ requirements:
     # - fastapi <=0.90.1
     # - requests ~=2.23
     # - opentelemetry-test-utils ==0.38b0
+    # - opentelemetry-instrumentation-fastapi 
+    # - httpx ~=0.22
+    # - fastapi ~=0.58
+    # - requests ~=2.23
+    # - opentelemetry-test-utils ==0.39b0
     # - opentelemetry-instrumentation-fastapi 
     # - httpx ~=0.22
     # - fastapi ~=0.58
